@@ -27,6 +27,8 @@ kubectl -n kube-system create serviceaccount tiller
 
 ```sh
 kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
+
+Tiller take care of deployments.So it will require admin role
 ```
 
 ## Copy admin.conf file from Kubernetes master to Jenkins user's home directory in Jenkins server
